@@ -45,24 +45,42 @@ int diry[8] = { 0, 1, -1, 0, -1, 1, -1, 1 };
 #define REVERSEA(arr, sz) reverse(ALLA(arr, sz))
 #define PERMUTE next_permutation
 #define TC(t) while (t--)
+#define fin(n) cin>>n
+#define fin_2(a,b) cin>>a>>b
+#define fin_3(a,b,c) cin>>a>>b>>c
 #define COUNT(v,n) count(v.begin(), v.end(), n)
+
+inline void inp_vi(vi& v, ll n)
+{
+    TC(n)
+    {
+        ll num; cin>>num;    v.pb(num);
+    }
+}
+inline void inp_v_str(v_str& v, ll n)
+{
+    TC(n)
+    {
+        string num; cin>>num;    v.pb(num);
+    }
+}
 
 
 inline string IntToString(ll a)
 {
-	char x[100];
-	sprintf(x, "%lld", a);
-	string s = x;
-	return s;
+    char x[100];
+    sprintf(x, "%lld", a);
+    string s = x;
+    return s;
 }
 
 inline ll StringToInt(string a)
 {
-	char x[100];
-	LL res;
-	strcpy(x, a.c_str());
-	sscanf(x, "%lld", &res);
-	return res;
+    char x[100];
+    LL res;
+    strcpy(x, a.c_str());
+    sscanf(x, "%lld", &res);
+    return res;
 }
 
 ll d(char c)
@@ -76,8 +94,11 @@ int main()
 {
     ll n;
     cin>>n;
-    v_str v;
-    vi ;
-    
-	return 0;
+    vi v;
+    v_str vs;
+    inp_vi(v, n); //taking integers
+    inp_v_str(vs, n); //taking strings
+
+
+    return 0;
 }
