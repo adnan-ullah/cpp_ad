@@ -1,5 +1,5 @@
 
-#include <bits/stdc++.h> // Include every standard library
+#include <bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
 typedef long long LL;
@@ -49,20 +49,32 @@ int diry[8] = { 0, 1, -1, 0, -1, 1, -1, 1 };
 #define fin_2(a,b) cin>>a>>b
 #define fin_3(a,b,c) cin>>a>>b>>c
 #define COUNT(v,n) count(v.begin(), v.end(), n)
+#define show(a) cout<<a<<endl
 
 inline void inp_vi(vi& v, ll n)
 {
     TC(n)
     {
-        ll num; cin>>num;    v.pb(num);
+        ll num;
+        cin>>num;
+        v.pb(num);
     }
 }
 inline void inp_v_str(v_str& v, ll n)
 {
     TC(n)
     {
-        string num; cin>>num;    v.pb(num);
+        string num;
+        cin>>num;
+        v.pb(num);
     }
+}
+
+template <typename Map>
+bool map_compare (Map const &lhs, Map const &rhs) {
+    return lhs.size() == rhs.size()
+        && std::equal(lhs.begin(), lhs.end(),
+                      rhs.begin());
 }
 
 
@@ -88,17 +100,19 @@ ll d(char c)
     return c-'0';
 }
 
+void solve(ll n)
+{
+}
+void solve(ll a ,ll b)
+{
+}
 
+void solve(string& s)
+{
+}
 
 int main()
 {
-    ll n;
-    cin>>n;
-    vi v;
-    v_str vs;
-    inp_vi(v, n); //taking integers
-    inp_v_str(vs, n); //taking strings
-
-
+  
     return 0;
 }
