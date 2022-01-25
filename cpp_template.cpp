@@ -51,6 +51,11 @@ int diry[8] = { 0, 1, -1, 0, -1, 1, -1, 1 };
 #define COUNT(v,n) count(v.begin(), v.end(), n)
 #define show(a) cout<<a<<endl
 
+inline void fast()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+}
 inline void inp_vi(vi& v, ll n)
 {
     TC(n)
@@ -71,10 +76,11 @@ inline void inp_v_str(v_str& v, ll n)
 }
 
 template <typename Map>
-bool map_compare (Map const &lhs, Map const &rhs) {
+bool map_compare (Map const &lhs, Map const &rhs)
+{
     return lhs.size() == rhs.size()
-        && std::equal(lhs.begin(), lhs.end(),
-                      rhs.begin());
+           && std::equal(lhs.begin(), lhs.end(),
+                         rhs.begin());
 }
 
 
@@ -103,7 +109,7 @@ ll d(char c)
 void solve(ll n)
 {
 }
-void solve(ll a ,ll b)
+void solve(ll a,ll b)
 {
 }
 
@@ -113,6 +119,7 @@ void solve(string& s)
 
 int main()
 {
-  
+    fast();
+
     return 0;
 }
