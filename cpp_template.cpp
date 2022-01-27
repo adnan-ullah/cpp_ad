@@ -19,7 +19,8 @@ long long INFF = 1000000000000000005LL;
 double PI = acos(-1);
 int dirx[8] = { -1, 0, 0, 1, -1, -1, 1, 1 };
 int diry[8] = { 0, 1, -1, 0, -1, 1, -1, 1 };
-
+ 
+#define fast() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define FOR(a, b, c) for (int(a) = (b); (a) < (c); ++(a))
 #define FORN(a, b, c) for (int(a) = (b); (a) <= (c); ++(a))
 #define FORD(a, b, c) for (int(a) = (b); (a) >= (c); --(a))
@@ -106,9 +107,7 @@ ll d(char c)
     return c-'0';
 }
 
-void solve(ll n)
-{
-}
+
 void solve(ll a,ll b)
 {
 }
@@ -117,9 +116,18 @@ void solve(string& s)
 {
 }
 
+
+void solve(ll n)
+{
+}
+
 int main()
 {
     fast();
+    ll tc;
+    fin(tc);
+    solve(tc);
 
+    
     return 0;
 }
