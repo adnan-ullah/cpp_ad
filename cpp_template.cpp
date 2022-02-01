@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
@@ -19,15 +18,16 @@ long long INFF = 1000000000000000005LL;
 double PI = acos(-1);
 int dirx[8] = { -1, 0, 0, 1, -1, -1, 1, 1 };
 int diry[8] = { 0, 1, -1, 0, -1, 1, -1, 1 };
- 
-#define fast() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+
+#define mx 100001
+
 #define FOR(a, b, c) for (int(a) = (b); (a) < (c); ++(a))
 #define FORN(a, b, c) for (int(a) = (b); (a) <= (c); ++(a))
 #define FORD(a, b, c) for (int(a) = (b); (a) >= (c); --(a))
 #define FORSQ(a, b, c) for (int(a) = (b); (a) * (a) <= (c); ++(a))
 #define FORC(a, b, c) for (char(a) = (b); (a) <= (c); ++(a))
 #define FOREACH(a, b) for (auto&(a) : (b))
-#define REP(i, n) FOR(i, 0, n)
+#define rep(i, n) FOR(i, 0, n)
 #define REPN(i, n) FORN(i, 1, n)
 #define MAX(a, b) a = max(a, b)
 #define MIN(a, b) a = min(a, b)
@@ -51,11 +51,17 @@ int diry[8] = { 0, 1, -1, 0, -1, 1, -1, 1 };
 #define fin_3(a,b,c) cin>>a>>b>>c
 #define COUNT(v,n) count(v.begin(), v.end(), n)
 #define show(a) cout<<a<<endl
-
+#define SEGMENT_Parameters ll node, ll b, ll e , ll low, ll high
+/*
+sort(v.begin(), v.end(), [&](pair<int, int> &a, pair<int, int> &b) {
+        if(a.first != b.first) return (a.first < b.first);
+        return (a.second > b.second);
+*/
 inline void fast()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+      ios::sync_with_stdio(false);
+	 cin.tie(nullptr);
+	 cout.tie(nullptr);
 }
 inline void inp_vi(vi& v, ll n)
 {
@@ -107,27 +113,34 @@ ll d(char c)
     return c-'0';
 }
 
+//vi v = {1,2,3,4,5,6,7,8,9,10}; // vec
+vi v;
+vi TREE(3*mx); // segTree
 
-void solve(ll a,ll b)
+void construct(ll node, ll b, ll e)
 {
 }
 
-void solve(string& s)
+ll findMax(SEGMENT_Parameters)
 {
 }
 
 
-void solve(ll n)
+void updateRange(SEGMENT_Parameters, ll inc)
 {
 }
 
+
+void solve()
+{
+
+
+}
 int main()
 {
     fast();
-    ll tc;
-    fin(tc);
-    solve(tc);
+    solve();
 
-    
+
     return 0;
 }
