@@ -113,6 +113,15 @@ ll n;
 vi dp(n+1, INF);
 
 
+void max_self(ll& a, ll b)
+{
+    a = max(a, b);
+}
+void min_self(ll& a, ll b)
+{
+    a = min(a, b);
+}
+
 
 void solve()
 {
