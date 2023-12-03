@@ -107,11 +107,6 @@ ll d(char c)
     return c-'0';
 }
 
-vi v,coin;
-vi tree(3*mx); 
-ll n;
-vi dp(n+1, INF);
-
 
 void max_self(ll& a, ll b)
 {
@@ -123,9 +118,14 @@ void min_self(ll& a, ll b)
 }
 
 
+vi v,coin;
+vi tree(3*mx);
+ll n;
+vi dp(n+1, INF);
+
 void solve()
 {
-
+    show("Hello Adnan");
 
 }
 int main()
